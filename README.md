@@ -18,7 +18,6 @@ data to display:
 - SCSS
 - CSS Grid
 
-
 ## Project setup
 ```
 npm install
