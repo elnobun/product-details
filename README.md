@@ -23,8 +23,8 @@ to manage reactivity at all points in an application,
 without compromising organization and readability.
 
 Taking advantage of modern css features, can help productivity. I used `SCSS` as my
-CSS Processor because `SCSS` converts to modern css features to make it browser
-compatible.
+CSS Processor because `SCSS` converts modern css features for older browser
+compatibility.
 
 ## Project setup
 
