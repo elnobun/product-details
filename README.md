@@ -18,6 +18,14 @@ data to display:
 - SCSS
 - CSS Grid
 
+I choose `VueJS 3` because of the new composition API that provides a different way 
+to manage reactivity at all points in an application, 
+without compromising organization and readability.
+
+Taking advantage of modern css features, can help productivity. I used `SCSS` as my
+CSS Processor because `SCSS` converts to modern css features to make it browser
+compatible.
+
 ## Project setup
 
 ### Clone Project
@@ -40,5 +48,9 @@ npm run serve
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Area For Improvement
+There are thousands of ways to improve this project.
+With more time, I will be able to work more on the UI (User Interface).
+Although the project is responsive, Styling can take a lot of time.
+I will definitely be improving this.
+
