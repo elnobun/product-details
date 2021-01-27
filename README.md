@@ -19,6 +19,13 @@ data to display:
 - CSS Grid
 
 ## Project setup
+
+### Clone Project
+```
+git clone git@github.com:elnobun/product-details.git
+```
+
+### Run Project
 ```
 npm install
 ```
