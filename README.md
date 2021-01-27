@@ -33,12 +33,12 @@ compatibility.
 git clone git@github.com:elnobun/product-details.git
 ```
 
-### Run Project
+### Install dependencies
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Run Project
 ```
 npm run serve
 ```
