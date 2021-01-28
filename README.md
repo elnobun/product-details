@@ -26,6 +26,12 @@ Taking advantage of modern css features, can help productivity. I used `SCSS` as
 CSS Processor because `SCSS` converts modern css features for older browser
 compatibility.
 
+### Mobile View
+<img width="578" alt="Screenshot 2021-01-28 at 02 35 23" src="https://user-images.githubusercontent.com/15114201/106081828-80e8a280-6111-11eb-9e39-5a1abd775eed.png">
+
+### Desktop View
+<img width="1440" alt="Screenshot 2021-01-28 at 02 32 14" src="https://user-images.githubusercontent.com/15114201/106081667-3109db80-6111-11eb-8a29-ef541fa7c15c.png">
+
 ## Project setup
 
 ### Clone Project
@@ -50,7 +56,7 @@ npm run lint
 
 ### Area For Improvement
 There are thousands of ways to improve this project.
-With more time, I will be able to work more on the UI (User Interface).
+With more time, I will be able to improve the UI (User Interface).
 Although the project is responsive, Styling can take a lot of time.
 I will definitely be improving this.
 
