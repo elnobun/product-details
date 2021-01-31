@@ -1,4 +1,43 @@
 // COLORS
 $color-background: #F0F2F5;
 $color-price-tag: #047857;
-$color-author: #1D4ED8
+$color-author: #1D4ED8;
+
+/* VIEW PORTS */
+
+// Mobile
+@mixin mobile() {
+  display: grid;
+  grid-template-areas:
+          "title"
+          "author"
+          "sales-date"
+          "image"
+          "prices"
+          "author-bio"
+          "description"
+          "reviews"
+          "retailers";
+
+  padding: 1.5rem;
+  max-width: 900px;
+  gap: 1.5rem;
+  margin: 0 auto;
+}
+
+// Desktop
+@mixin desktop() {
+  @include mobile;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+          "image title"
+          "image author"
+          "image prices"
+          "image sales-date"
+          "image retailers"
+          "image description"
+          "author-bio description"
+          "reviews description";
+
+  gap: 1.5rem;
+}

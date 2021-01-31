@@ -1,21 +1,6 @@
 /* MOBILE VIEW */
 .product {
-  display: grid;
-  grid-template-areas:
-          "title"
-          "author"
-          "sales-date"
-          "image"
-          "prices"
-          "author-bio"
-          "description"
-          "reviews"
-          "retailers";
-
-  padding: 1.5rem;
-  max-width: 900px;
-  gap: 1.5rem;
-  margin: 0 auto;
+  @include mobile();
 
   // Title
   .product__title {
@@ -167,18 +152,7 @@
 /* LARGE SCREENS */
 @media screen and (min-width: 960px) {
   .product {
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas:
-          "image title"
-          "image author"
-          "image prices"
-          "image sales-date"
-          "image retailers"
-          "image description"
-          "author-bio description"
-          "reviews description";
-
-    gap: 1.5rem;
+    @include desktop();
 
     .align {
       text-align: left;
