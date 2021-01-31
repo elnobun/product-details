@@ -8,7 +8,7 @@
 
     <!-- Contributor Author -->
     <div class="product__author-name align" v-for="author in product.contributors" :key="author.name">
-        <p>By <span>{{ author.contributor.name }}</span></p>
+        <p>By {{ author.contributor.name }}</p>
     </div>
 
     <!--  Author Bio  -->
@@ -19,13 +19,13 @@
 
     <!--  Product Image  -->
     <div class="product__image">
-      <img class="paper" :src="product.image" alt="book image">
+      <img class="paper" :src="formatData(product.image, /x145/g, 'x400' )" alt="book image">
     </div>
 
     <!-- Product Description -->
     <div class="product__description paper">
       <h4 class="header__caption">Product Description</h4>
-      <span v-html="formatData(product.description, /&nbsp/g)"></span>
+      <span v-html="formatData(product.description, /&nbsp/g, '')"></span>
     </div>
 
 
@@ -43,7 +43,7 @@
     <!-- Product Sale Date -->
     <div class="product__sale align">
       <span class="sale__date">Sale Date:</span>
-      <span> March 15, {{ formatData(product.sale_date.date, /-03-15 00:00:00.000000/)}}</span>
+      <span> March 15, {{ formatData(product.sale_date.date, /-03-15 00:00:00.000000/, "")}}</span>
     </div>
 
 
@@ -51,7 +51,7 @@
     <div class="product__reviews paper">
       <h4 class="header__caption">Reviews</h4>
       <div class="reviews" v-for="reviews in product.reviews" :key="reviews.review_id">
-        <q>{{formatData(reviews.review.description, /[“”]/g )}}</q>
+        <q>{{formatData(reviews.review.description, /[“”]/g, "" )}}</q>
         <p v-html="reviews.review.reviewer"></p>
       </div>
     </div>
@@ -62,7 +62,7 @@
       <div class="retail__links">
         <ul v-for="retailer in product.retailers" :key="retailer.path">
           <li class="btn">
-            <a :href="retailer.path" target="_blank">{{ retailer.label }}</a>
+            <a :href="retailer.path" target="_blank" rel="noreferrer">{{ retailer.label }}</a>
           </li>
         </ul>
       </div>
@@ -88,8 +88,8 @@ export default {
     product.value = await productResponse.json()
 
     // Function to format HTML data
-    function formatData(data, str) {
-      return data.replace(str, "")
+    function formatData(data, str, replace) {
+      return data.replace(str, replace)
     }
 
     // Return data object, so that it becomes available to use in the template
