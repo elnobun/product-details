@@ -26,6 +26,10 @@ Taking advantage of modern css features, can help productivity. I used `SCSS` as
 CSS Processor because `SCSS` converts modern css features for older browser
 compatibility.
 
+### Note: 
+This project was also built using wordpress. I will be uploading that
+later.
+
 ### Mobile View
 <img width="578" alt="Screenshot 2021-01-28 at 02 35 23" src="https://user-images.githubusercontent.com/15114201/106081828-80e8a280-6111-11eb-9e39-5a1abd775eed.png">
 
